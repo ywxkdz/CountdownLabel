@@ -50,7 +50,7 @@ extension LTMorphingLabel {
                 height: maskedHeight
             )
             String(charLimbo.char).draw(in: rect, withAttributes: [
-                .font: self.font,
+                .font: self.font!,
                 .foregroundColor: self.textColor
             ])
             guard let newImage = UIGraphicsGetImageFromCurrentImageContext() else {
